@@ -1,0 +1,80 @@
+#farmasi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    min-height: 65vh;
+}
+
+#combo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.combo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 28px;
+    width: 130%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.combo-title {
+    color: #6f8d74;
+}
+
+.combo-description {
+    color: #434343;
+    text-align: center;
+    list-style: none;
+}
+
+.combo-description li {
+    padding: 10px;
+}
+
+.combo-description strong {
+    color: #6f8d74;
+}
+
+@media screen and (max-width: 1170px) {
+    #combo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #farmasi .section-subtitle {
+        text-align: center;
+    }
+
+    .combo {
+        width: calc(100% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .combo {
+        width: 100%;
+    }
+
+    #combo {
+        width: 120%;
+    }
+
+    #farmasi .section-title {
+        text-align: center;
+    }
+
+    #farmasi .section-subtitle {
+        text-align: center;
+    }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#tecnicas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+    
+}
+
+.swiper {
+    width: 100%;
+    height: 329px;
+    margin: auto;
+    padding-bottom: 60px;
+    margin-top: 32px;
+}
+
+.swiper-slide {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 4px rgba(92, 115, 160, 0.07);
+    padding: 34px;
+    border-radius: 12px;
+}
+
+.swiper-slide h4 {
+    color: #6f8d74;
+    font-family: 'Courgette', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.swiper-slide p {
+    margin-top: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: transparent !important;
+    width: 40px !important;
+    height: 40px !important;
+    color: #6f8d74 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.swiper-button-next::after {
+    font-weight: 900 !important;
+    font-size: 24px !important;
+}
+
+.swiper-button-prev::after {
+    font-weight: 900 !important;
+    font-size: 24px !important;
+}
+
+.swiper-button-next {
+    right: -3px !important;
+}
+
+.swiper-button-prev {
+    left: -3px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #6f8d74 !important;
+}
+
+@media screen and (max-width: 500px) {
+    #tecnicas h4 {
+        margin-top: -25px;
+    }
+    
+    .swiper {
+        width: 120%;
+        right: 27.5px;
+    }
+}
